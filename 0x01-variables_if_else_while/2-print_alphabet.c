@@ -1,25 +1,20 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-int main (void)
+/**
+ * main - Entry
+ *
+ * Return: Always 0
+ */
 
+int main(void)
 {
 
-		int alphabet;
+	char n;
 
-			alphabet= 'a';
-
-				while (alphabet <= 'z')
-
-						{
-
-									putchar(alphabet);
-
-											alphabet++;
-
-												}
-
-					putchar('\n');
-
-						return (0);
-
+	for (n = 'a'; n <= 'z'; n++)
+	{
+		putchar(n);
+	}
+	putchar('\n');
+	return (0);
 }
