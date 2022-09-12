@@ -1,29 +1,36 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
+/**
+ * main - output all single digit number of base 10
+ *
+ * Return: 0 if successful
+ */
 
 int main(void)
 {
-	int a, b;
+	int var;
 
-	for (a = 0; a <= 98; a++)
+	for (var = 0; var < 99; var++)
 	{
-		for (b = a + 1; b <= 99; b++)
+		int ii;
+
+		for (ii = var + 1; ii < 100; ii++)
 		{
-			putchar((a / 10) + '0');
-			putchar((a % 10) + '0');
-			putchar(' ');
-			putchar((b / 10) + '0');
-			putchar((b % 10) + '0');
+		putchar((var / 10) + '0');
+		putchar((var % 10) + '0');
+		putchar(' ');
+		putchar((ii / 10) + '0');
+		putchar((ii % 10) + '0');
 
-			if (a == 98 && b == 99)
-				continue;
-
+		if (var != 98)
+		{
 			putchar(',');
 			putchar(' ');
 		}
+		else
+			continue;
+		}
 	}
-
 	putchar('\n');
 
 	return (0);

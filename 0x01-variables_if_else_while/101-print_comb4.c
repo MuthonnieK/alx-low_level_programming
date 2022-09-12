@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - output all single number of base 10
+ *
+ * Return: 0 if successful
+ */
+
 int main(void)
 {
 	int var;
