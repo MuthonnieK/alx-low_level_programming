@@ -10,12 +10,18 @@
 int print_sign(int n)
 {
 	for (n > 0)
+	{
 		return (1);
-		_putchar (+);
+		_putchar ('+');
+	}
 	for (n < 0)
+	{
 		return (-1);
-		_putchar (-);
+		_putchar ('-');
+	}
 	for (n = 0)
+	{
 		return (0);
 		_putchar (0);
+	}
 }
