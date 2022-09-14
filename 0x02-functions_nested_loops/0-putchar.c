@@ -4,12 +4,12 @@
 /*
  * main - Entry point
  *
- * Description: prints _putchar using putchar prototype
- *
  * Return: Always 0 (Success)
  */
+
+/*Description: prints _putchar using putchar prototype*/
 int main(void)
-{
+{	
 	char str[] = "_putchar";
 	int ch;
 
