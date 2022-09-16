@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main - enrty block
+ * @void: no argument
+ * Return: always 0 Success
  */
 int main(void)
 {
