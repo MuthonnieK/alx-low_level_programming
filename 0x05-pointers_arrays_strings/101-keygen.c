@@ -35,4 +35,7 @@ int main(void)
 			m++;
 		}
 	}
+	p[a] = '\0';
+	printf("%s", p);
+	return (0);
 }
