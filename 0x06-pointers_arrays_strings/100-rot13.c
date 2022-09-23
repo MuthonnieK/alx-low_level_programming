@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * rot13 - encodes
- * @s: pointer
- * Return: s
+ * *rot13 - encodes a string using rot13.
+ * @s: string pointer
+ * Return: encoded string
  */
 char *rot13(char *s)
 {
 	int a, b;
-	char input[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char m[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char n[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (a = 0; s[a] != '\0'; a++)
+	for (a = 0; *(s + a); a++)
 	{
-		for (b = 0; input[b] != '\0'; b++)
+		for (b = 0; b < 52; b++)
 		{
-			if (((s[a] <= 'z' && s[a] >= 'a') || (s[a] <= 'Z' && s[a] >= 'A')) && s[a] == input[b])
+			if (m[b] == *(s + a))
 			{
-				s[a] = output[b];
+				*(s + a) = n[b];
 				break;
 			}
 		}
