@@ -1,19 +1,17 @@
-int _putchar(char s);
+#include "main.h"
+#include <string.h>
 
-void _puts_recursion(char *s);
-
-void _print_rev_recursion(char *s);
-
-int _strlen_recursion(char *s);
-
-int factorial(int n);
-
-int _pow_recursion(int x, int y);
-
-int _sqrt_recursion(int n);
-
-int is_prime_number(int n);
-
-int is_palindrome(char *s);
-
-int wildcmp(char *s1, char *s2);
+/**
+ * _puts_recursion -  prints a string
+ * @s: string pointer
+ */
+void _puts_recursion(char *s)
+{
+	if (strlen(s) < 1)
+		_putchar('\n');
+	else
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+}
