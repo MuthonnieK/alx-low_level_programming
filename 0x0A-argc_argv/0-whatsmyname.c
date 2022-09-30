@@ -2,11 +2,13 @@
 #include <stdlib.h>
 
 /**
- * main -  main function
- * @argc: arguments number passed
- * @argv: first element pointer
- * Return: on succes 0
+ * main - prints program's name
+ * @argc: number of actual arguments passed
+ * @argv: pointer to the first element in the arguments array
+ *
+ * Return: 0 upon success
  */
+
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
