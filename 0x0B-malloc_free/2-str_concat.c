@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+int _strlen(const char *s);
+
 /**
  * *str_concat - concatenates two strings.
  * @s1: string 1
