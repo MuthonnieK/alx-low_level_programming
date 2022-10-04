@@ -10,6 +10,7 @@
 int _strlen(char *s)
 {
 	int size = 0;
+
 	for (; s[size] != '\0'; size++)
 		;
 	return (size);
@@ -25,7 +26,7 @@ char *argstostr(int ac, char **av)
 {
 	int m = 0, nc = 0, k = 0, cmpt = 0;
 	char *s;
-	
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
